@@ -1,0 +1,27 @@
+{
+    "name": "vscode-language-dyon",
+    "displayName": "Dyon Language Support",
+    "description": "Dyon Language Support",
+    "publisher": "martinlindhe",
+    "repository": "https://github.com/martinlindhe/vscode-language-dyon",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dyon",
+            "aliases": ["Dyon", "dyon"],
+            "extensions": [".dyon"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dyon",
+            "scopeName": "source.dyon",
+            "path": "./syntaxes/dyon.tmLanguage.json"
+        }]
+    }
+}
